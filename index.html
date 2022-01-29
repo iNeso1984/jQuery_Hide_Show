@@ -81,7 +81,7 @@
         <button id="btn2">Hide</button>
         <button id="btn2-1">Reveal</button>
         <div class="card text-white bg-dark mb-3" id="card2" style="width: 18rem;">
-            <img class="card-img-top" src="images/ode to lemons open.jpg" alt="image of apple">
+            <img class="card-img-top" id="img2" src="images/ode to lemons open.jpg" alt="image of apple">
             <div class="card-body">
                 <h5 class="card-title">Ode to Lemons 2</h5>
                 <p class="card-text"> Graphic Art Created with Adobe Illustrator</p>
@@ -141,7 +141,7 @@
                 <button id="btn6">Mouseleave Event</button>
              
                 <div class="card text-white bg-dark mb-3" id="card6" style="width: 18rem;">
-                    <img class="card-img-top" src="images/Ode to lemons negative.png" alt="image of apple">
+                    <img class="card-img-top" id="img6" src="images/Ode to lemons negative.png" alt="image of apple">
                     <div class="card-body">
                         <h5 class="card-title">Ode to Lemons 3</h5>
                         <p class="card-text">Graphic Art Created with Adobe Illustrator</p>
@@ -212,8 +212,13 @@
 
 
                     });
+
+
+     
+         
+
     });
-    //mouseover event!
+    //ouseover event!
 
        $("#btn5").mouseover(function () {
             $(`#card5`).toggle();
@@ -222,7 +227,7 @@
 // mouseleave event!
     $("#btn6").mouseleave(function () {
      
-          $(`#img2`).clone().append(`#img6`);
+         $(`#img2`).clone().append(`#img6`);
     });
 
     </script>
