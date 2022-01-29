@@ -50,14 +50,14 @@
 
 </head>
 <body>
+      <header>
+        <h1>jQuery Mouse and Click Events</h1></header>
     <div class="container">
         
 
-        <header>
-        <h1>jQuery Mouse Event</h1></header>
+      
        
-        <h3>Mouse Event</h3>
-
+       
 <div class="container">
     <div class="row">
         <div class="col-sm">
@@ -105,6 +105,52 @@
         </div>
     
     </div>
+        <div class="row">
+            <div class="col-sm">
+                <button id="btn4">Toggle Event</button>
+               
+                <div class="card text-white bg-dark mb-3" id="card4" style="width: 18rem;">
+                    <img class="card-img-top" src="images/ode to lemons closed-01.jpg" alt="image of apple">
+                    <div class="card-body">
+                        <h5 class="card-title">Ode to Lemons 1</h5>
+                        <p class="card-text">Graphic Art Created with Adobe Illustrator</p>
+                        <a href="https://vanessa555withun.myportfolio.com/" class="btn btn-primary">See More</a>
+        
+                    </div>
+                </div>
+        
+        
+            </div>
+        
+        
+            <div class="col-sm">
+                <button id="btn5">Mouseover Event</button>
+             
+                <div class="card text-white bg-dark mb-3" id="card5" style="width: 18rem;">
+                    <img class="card-img-top" src="images/ode to lemons open.jpg" alt="image of apple">
+                    <div class="card-body">
+                        <h5 class="card-title">Ode to Lemons 2</h5>
+                        <p class="card-text"> Graphic Art Created with Adobe Illustrator</p>
+                        <a href="https://vanessa555withun.myportfolio.com/" class="btn btn-primary">See More</a>
+        
+                    </div>
+                </div>
+        
+            </div>
+            <div class="col-sm">
+                <button id="btn6">Mouseleave Event</button>
+             
+                <div class="card text-white bg-dark mb-3" id="card6" style="width: 18rem;">
+                    <img class="card-img-top" src="images/Ode to lemons negative.png" alt="image of apple">
+                    <div class="card-body">
+                        <h5 class="card-title">Ode to Lemons 3</h5>
+                        <p class="card-text">Graphic Art Created with Adobe Illustrator</p>
+                        <a href="https://vanessa555withun.myportfolio.com/" class="btn btn-primary">See More</a>
+        
+                    </div>
+                </div>
+        
+            </div>
 </div>
 
 
@@ -118,7 +164,7 @@
         
           // document.ready makes sure that it doesn't load until entire doc is ready. 
 
-
+//Show and reveal event----------------
         $(document).ready(function()
         {
 
@@ -157,9 +203,27 @@
 
             });
 
+// Toggle Event-------------------
 
+
+            $(`#btn4`).click(function () {
+                $(`#card4`).toggle();
+        
+
+
+                    });
     });
-            
+    //mouseover event!
+
+       $("#btn5").mouseover(function () {
+            $(`#card5`).toggle();
+        });
+
+// mouseleave event!
+    $("#btn6").mouseleave(function () {
+     
+         $(`#card2`).clone().append(`#card6`);
+    });
 
     </script>
 </body>
